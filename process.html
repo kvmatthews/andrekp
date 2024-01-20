@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/process.css" />
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><span>Recycool</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recommendation.html">Recommendation</a></li>
+                <li><a href="process.html">Classification</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="background-container">
+            <img src="./assets/img/pexels-pok-rie-7837732.jpg" alt="">
+        </div>
+        <section>
+            <div class="section-title">
+                <img src="assets/img/Ellipse_5.svg" alt="" style="width: 80px;">
+                <h1>Classification</h1>
+            </div>
+            <div class="main-container">
+                <div class="process-section">
+                    <div class="input-section">
+                        <label for="fileInput">Submit image</label>
+                        <input type="file" class="form-control" onchange="loadImg()" id="fileInput" aria-describedby="fileHelp">
+                    </div>
+                    <div class="btn-submit-container">
+                        <button type="button" class="btn-primary" id="upload">Process Image</button>
+                        <!-- Add the new button for the GET request -->
+                        <button type="button" class="btn-success" id="getResult">Get Result</button>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/img/Image_Login_Page.svg." id="imagePreview" class="image-preview">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">@Recycool</a>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/utils.js"></script>
+</body>
+
+</html>
